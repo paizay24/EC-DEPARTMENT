@@ -22,7 +22,16 @@ class UserSeeder extends Seeder
         'email' => 'admin@gmail.com',
         'role' => 'admin',
         'email_verified_at' => now(),
-        'password' => Hash::make('pzo123123'),
+        'password' => Hash::make('saimyintaung123'),
+        'remember_token' => Str::random(10),
+    ]);
+
+    User::factory()->create([
+        'name' => 'Sai Myint Aung',
+        'email' => 'saimyintaung@gmail.com',
+        'role' => 'admin',
+        'email_verified_at' => now(),
+        'password' => Hash::make('saimyintaung123'),
         'remember_token' => Str::random(10),
     ]);
     User::factory()->create([
@@ -30,7 +39,7 @@ class UserSeeder extends Seeder
         'email' => 'teacher@gmail.com',
         'role' => 'teacher',
         'email_verified_at' => now(),
-        'password' => Hash::make('pzo123123'),
+        'password' => Hash::make('psaimyintaung123'),
         'remember_token' => Str::random(10),
     ]);
     User::factory()->create([
@@ -38,7 +47,7 @@ class UserSeeder extends Seeder
         'email' => 'student@gmail.com',
         'role' => 'student',
         'email_verified_at' => now(),
-        'password' => Hash::make('pzo123123'),
+        'password' => Hash::make('saimyintaung123'),
         'remember_token' => Str::random(10),
     ]);
     }
